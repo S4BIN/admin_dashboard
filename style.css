@@ -16,23 +16,100 @@ header {
     margin-left: 17rem;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
-    margin-top: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .first-row,
 .second-row {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.first-row svg {
-    height: 25px;
+.first-row {
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    padding-left: 3rem;
+    align-items: center;
 }
 
-.first-row img {
+.first-row .search {
+    display: flex;
+    gap: 8px;
+}
+
+.first-row .search input {
+    background-color: #E5E7E9;
+    border: none;
+    border-radius: 20px;
+    width: 40rem;
+    height: 2rem;
+}
+
+.first-row .search svg,
+.first-row .right-side svg {
     height: 30px;
-    width: 30px;
+    cursor: pointer;
+}
+
+.first-row .right-side {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.first-row .right-side img {
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: #3ab795;
+}
+
+.first-row .right-side p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.second-row nav button {
+    background-color: #3AB795;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.second-row .account {
+    display: flex;
+    padding-right: 14rem;
+}
+
+.second-row .account img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #3ab795;
+}
+
+.second-row .account .name {
+    margin-left: 10px;
+}
+
+.second-row .account .name p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.second-row .account .name p:nth-child(2) {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .sidebar {
