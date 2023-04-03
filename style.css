@@ -11,32 +11,43 @@
     padding: 0;
 }
 
-header {
+header {    
     display: grid;
-    margin-left: 300px;
-    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    margin-left: 17rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    margin-top: 15px;
 }
 
-header svg {
+.first-row,
+.second-row {
+    display: flex;
+}
+
+.first-row svg {
+    height: 25px;
+}
+
+.first-row img {
     height: 30px;
-}
-
-header img {
-    background-color: red;
-    border-radius: px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #3ab795;
 }
 
 .sidebar {
     top: 0;
     position: absolute;
-    background-color: wheat;
-    width: 300px;
+    background-color: #3ab795;
+    width: 17rem;
+    height: 100vh;
 }
 
 .title {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     margin-top: 20px;
     margin-bottom: 50px;
 }
