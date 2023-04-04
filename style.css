@@ -161,8 +161,7 @@ header {
 }
 
 h3 {
-    margin-left: 18rem;
-    margin-top: 30px;
+    margin-left: 40px;
     margin-bottom: 10px;
 }
 
@@ -170,6 +169,7 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     width: 80%;
+    margin-top: 25px;
     margin-left: 20%;
 }
 
@@ -222,10 +222,53 @@ main .right-side {
 }
 
 main .right-side .announce {
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
-    background-color: #FFCF56;
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-left: 15px;
+    background-color: #E5E7E9;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    height: fit-content;
+    gap: 20px;
+}
+
+main .right-side .announce div:nth-child(1),
+main .right-side .announce div:nth-child(2) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #797979;
+}
+
+main .right-side .trending {
+    margin-top: 25px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #E5E7E9;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    height: fit-content;
+    gap: 10px;
+}
+
+main .right-side .trending .account {
+    display: flex;
+    align-items: center;
+}
+
+main .right-side .trending .account img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #3ab795;
+    cursor: pointer;
+}
+
+main .right-side .trending .account .name {
+    padding-left: 5px;
+}
+
+main .right-side .trending .account .name p:nth-child(2) {
+    color: #3d3c3c;
 }
