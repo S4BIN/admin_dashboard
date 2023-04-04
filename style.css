@@ -154,6 +154,7 @@ header {
     color: black;
     font-weight: bold;
     text-decoration: none;
+    padding-top: 7px;
 }
 
 .other {
@@ -189,6 +190,7 @@ main {
     background-color: #FFCF56;
     display: grid;
     grid-template-columns: 1fr;
+    border-left: 10px solid #3d3c3c;
 }
 
 .projects .project p:nth-child(1) {
